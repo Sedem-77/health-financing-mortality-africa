@@ -24,11 +24,11 @@ library(officer)
 
 
 # File paths
-path_hexp <- "Health_expenditure_data/API_SH.XPD.GHED.PP.CD_DS2_en_csv_v2_7562.csv"
-path_mort <- "Death_rate_data /API_SP.DYN.CDRT.IN_DS2_en_csv_v2_8621.csv"
-path_oop <-  "Out_of_pockect_exp_data/API_SH.XPD.OOPC.CH.ZS_DS2_en_csv_v2_9851.csv"
-path_polstab <- "Political_stability_data/API_PV.EST_DS2_en_csv_v2_7919.csv"
-path_agedep <- "Age_dependecy_ratio_data/API_SP.POP.DPND_DS2_en_csv_v2_594254.csv"
+path_hexp <- "data/health_expenditure/API_SH.XPD.GHED.PP.CD_DS2_en_csv_v2_7562.csv"
+path_mort <- "data/death_rate/API_SP.DYN.CDRT.IN_DS2_en_csv_v2_8621.csv"
+path_oop <-  "data/out_of_pocket_expenditure/API_SH.XPD.OOPC.CH.ZS_DS2_en_csv_v2_9851.csv"
+path_polstab <- "data/political_stability/API_PV.EST_DS2_en_csv_v2_7919.csv"
+path_agedep <- "data/age_dependency_ratio/API_SP.POP.DPND_DS2_en_csv_v2_594254.csv"
 
 # Read in the health expenditure data
 hexp_raw <- read_csv(path_hexp, skip = 4)
@@ -1214,4 +1214,3 @@ vis.gam(gam_north_less20, view = c("HealthExp_lag1", "Oop"),
         too.far = 0.05, n.grid = 200, se = 0,
         main = "Data density on interaction surface")
 points(panel_north_less20$HealthExp_lag1, panel_north_less20$Oop, pch = 20, cex = 0.5)
-
