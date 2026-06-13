@@ -1,0 +1,68 @@
+# ===============================================
+# GIT IGNORE - Health Financing & Mortality Project
+# ===============================================
+
+# OS & Editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+# R & RStudio specific
+.Rhistory
+.RData
+.Ruserdata
+.httr-oauth
+.cache/
+*.Rproj
+.Rprofile
+Rplots.pdf
+*.rda
+
+# Manuscripts & Documents (not for version control)
+Revised Manuscript.pdf
+*Manuscript*.pdf
+*BLINDED*.docx
+TITLE PAGE.docx
+Introduction.docx
+Data sources.docx
+report.pdf
+
+# Old Analysis Outputs (use archive/ instead)
+FILTERED_ANALYSIS_PUBLICATION/
+word_transport/
+publication_output/
+Tableau Dashboard/
+Rplots.pdf
+
+# Generated data/outputs (regenerate with code)
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.csv
+*.xlsx
+
+# Analysis logs
+*.log
+analysis_output.log
+summaries_output.log
+
+# Temporary analysis files
+*.docx
+
+# Python & other temp files
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Environment files
+.env
+.venv
+venv/
